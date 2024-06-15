@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+   
+    <title>Conversão Calc JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversão de medidas!</h1>
+      <div class="form">
+        <div class="inputs">
+          <input
+            type="text"
+            id="calc"
+            placeholder="Digite sua medida!"
+            class="calc"
+          />
+          <div class="custom-select">
+            <select name="medida" id="medida" class="selectMed">
+                <option value="bin">Binário</option>
+                <option value="compl">Complemento de 2</option>
+                <option value="dec">Decimal</option>
+                <option value="octa">Octal</option>
+                <option value="hex">Hexadecimal</option>
+            </select>
+          </div>
+        </div>
+        <div class="result-container">
+          <input type="text" id="result" class="result" readonly />
+        </div>
+        <div class="conv">
+          <p class="med" id="bin">BIN:</p>
+          <p class="med" id="dec">DEC:</p>
+          <p class="med" id="octa">OCT:</p>
+          <p class="med" id="hex">HEX:</p>
+        </div>
+        <button id="btn">Calcule e Converta!</button>
+      </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+
+  </body>
+</html>
